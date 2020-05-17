@@ -4,11 +4,11 @@
 [![Docs](https://img.shields.io/badge/Docs-Generated-green.svg)]()
 
 
-# XXX
+# waltz-tango-rest-plugin
 
 
 
 ```bash
-npm install @waltz-controls/XXX --registry=https://npm.pkg.github.com/waltz-controls
+npm install @waltz-controls/waltz-tango-rest-plugin --registry=https://npm.pkg.github.com/waltz-controls
 ```
 

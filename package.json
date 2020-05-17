@@ -1,7 +1,7 @@
 {
-  "name": "@waltz-controls/XXX",
+  "name": "@waltz-controls/waltz-tango-rest-plugin",
   "version": "1.0.0",
-  "description": "XXX",
+  "description": "TangoRest plugin for Waltz",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "watch": {
@@ -14,19 +14,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/waltz-controls/XXX.git"
+    "url": "git+https://github.com/waltz-controls/waltz-tango-rest-plugin.git"
   },
-  "keywords": [    
+  "keywords": [
     "waltz",
     "waltz-controls",
-    "webix"
+    "tango",
+    "tango-rest",
+    "tango-rest-api",
+    "module"
   ],
   "author": "Ingvord",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/waltz-controls/XXX/issues"
+    "url": "https://github.com/waltz-controls/waltz-tango-rest-plugin/issues"
   },
-  "homepage": "https://github.com/waltz-controls/XXX#readme",
+  "homepage": "https://github.com/waltz-controls/waltz-tango-rest-plugin#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-multi-entry": "^3.0.0",
