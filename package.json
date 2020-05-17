@@ -1,16 +1,16 @@
 {
   "name": "@waltz-controls/waltz-tango-rest-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "TangoRest plugin for Waltz",
-  "main": "dist/index.esm.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/_virtual/index.esm.js",
+  "module": "dist/_virtual/index.esm.js",
   "watch": {
     "build": "{src,test}/*.js"
   },
   "scripts": {
     "clean": "rm -rf dist",
     "build": "rollup -c",
-    "prepublishOnly":"mv dist/_virtual/_rollup:plugin-multi-entry:entry-point dist/index.esm.js",
+    "prepublishOnly":"mv dist/_virtual/_rollup:plugin-multi-entry:entry-point dist/_virtual/index.esm.js",
     "watch": "rollup -c -w"
   },
   "repository": {
