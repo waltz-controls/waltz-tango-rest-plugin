@@ -1,6 +1,6 @@
 {
   "name": "@waltz-controls/waltz-tango-rest-plugin",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "TangoRest plugin for Waltz",
   "main": "dist/_virtual/index.esm.js",
   "module": "dist/_virtual/index.esm.js",
@@ -10,7 +10,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build": "rollup -c",
-    "prepublishOnly":"mv dist/_virtual/_rollup:plugin-multi-entry:entry-point dist/_virtual/index.esm.js",
+    "prepublishOnly": "mv dist/_virtual/_rollup:plugin-multi-entry:entry-point dist/_virtual/index.esm.js",
     "watch": "rollup -c -w"
   },
   "repository": {
@@ -38,6 +38,15 @@
     "rollup": "^2.3.4"
   },
   "dependencies": {
+    "@waltz-controls/middleware": "^2.0.0",
+    "@waltz-controls/tango-rest-client": "^1.5.0",
     "rxjs": "^6.5.5"
-  }
+  },
+  "runtimeDependencies": [
+    "@waltz-controls/middleware",
+    "@waltz-controls/tango-rest-client",
+    "rxjs",
+    "rxjs/operators",
+    "rxjs/fetch"
+  ]
 }

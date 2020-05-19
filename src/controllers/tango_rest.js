@@ -82,11 +82,8 @@ class DecoratedTangoRestApi extends TangoRestApi {
  *
  */
 export class TangoRestController extends Controller {
-    constructor() {
-        super(kControllerTangoTest);
-    }
-
-    config(){
+    constructor(app) {
+        super(kControllerTangoTest, app);
     }
 
     /**

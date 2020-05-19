@@ -14,12 +14,8 @@ export const kContextTangoSubscriptions = "context:tango_subscriptions";
  * Initializes Tango Subscriptions Waltz context. Requires kUser context
  */
 export class TangoSubscriptionsController extends Controller {
-    constructor() {
-        super(kControllerTangoSubscriptions);
-    }
-
-    config(){
-
+    constructor(app) {
+        super(kControllerTangoSubscriptions, app);
     }
 
     /**
