@@ -16,7 +16,15 @@ npm install @waltz-controls/waltz-tango-rest-plugin --registry=https://npm.pkg.g
 
 ```js
 //main.js
-app.registerController(new TangoRestController())
+const kDummyUser = {
+    name: 'tango-cs',
+    headers: {
+        "Authorization": "Basic " + btoa("tango-cs:tango")
+    }
+};
+
+app.registerContext('user', kDummyUser)
+   .registerController(new TangoRestController())
    .registerController(new TangoSubscriptionsController())
    .run()
    
