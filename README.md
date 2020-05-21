@@ -23,6 +23,7 @@ const kDummyUser = {
     }
 };
 
+const app = new Application();
 app.registerContext('user', kDummyUser)
    .registerController(new TangoRestController())
    .registerController(new TangoSubscriptionsController())
