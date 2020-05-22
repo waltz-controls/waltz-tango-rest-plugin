@@ -38,9 +38,9 @@ function getTangoAttributeIcon(name, data_format){
         return 'heart-pulse';
     switch(data_format){
         case "SCALAR":
-            return 'at';
-        case "SPECTRUM":
             return 'chart-line';
+        case "SPECTRUM":
+            return 'poll-box-outline';
         case "IMAGE":
             return 'image-outline'
         default:
