@@ -2,7 +2,7 @@ import {Controller} from "@waltz-controls/middleware";
 import {TangoRestApi, TangoRestApiRequest} from "@waltz-controls/tango-rest-client";
 import {kUser} from "../context";
 import {map, mergeMap, share, switchMap} from "rxjs/operators";
-import {from} from "rxjs";
+import {EMPTY, from} from "rxjs";
 import {Pollable} from "../models/tango";
 
 /**
@@ -143,6 +143,8 @@ export function updatePolling(device, pollable, polled, poll_rate = 0){
                     });
             else if (pollable.polled)
                 return admin.remObjPolling([device.name, pollable.polling_type, pollable.name]);
+            else
+                return EMPTY;
         })
     );
 }
